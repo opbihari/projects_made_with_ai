@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shadow-system-hud"
+version = "2.2.0"
+description = "Shadow System HUD - Desktop Accountability & Audio-Synced Overlay Engine"
+readme = "README_INSTALL.txt"
+requires-python = ">=3.8"
+dependencies = ["Pillow>=9.0.0"]
+
+[project.gui-scripts]
+shadow-system-hud = "shadow_system_hud:main"
+
+[project.scripts]
+shadow-hud-setup = "shadow_system_hud:open_installer_gui"
